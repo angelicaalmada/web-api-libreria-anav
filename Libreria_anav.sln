@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria_anav", "Libreria_anav\Libreria_anav.csproj", "{CE4904DD-5D24-4C23-AFD0-8EFF2008EE01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE4904DD-5D24-4C23-AFD0-8EFF2008EE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE4904DD-5D24-4C23-AFD0-8EFF2008EE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE4904DD-5D24-4C23-AFD0-8EFF2008EE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE4904DD-5D24-4C23-AFD0-8EFF2008EE01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6157B1EC-BA34-44D5-93DA-865FF6C8BF98}
+	EndGlobalSection
+EndGlobal

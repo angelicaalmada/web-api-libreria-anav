@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ACfc5L0w27+RGwe4j1HHzlKDeKo8vPnCSLNwOWFTxnz+ghGkv2mfj0tLybmEqZxbUtu9vXXRK+X7WugcT6zoRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\julio\\OneDrive\\Escritorio\\PROYECTOS VISUAL\\Libreria_anav\\Libreria_anav\\Libreria_anav.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
