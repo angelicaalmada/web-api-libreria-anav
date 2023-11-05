@@ -1,7 +1,10 @@
+using Libreria_anav.Data;
+using Libreria_anav.Data.Models.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -16,9 +19,11 @@ namespace Libreria_anav
 {
     public class Startup
     {
+        public string ConnectionString { get; set; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            ConnectionString = Configuration.GetConnectionString("DefaultConnectionstring");
         }
 
         public IConfiguration Configuration { get; }
@@ -28,6 +33,12 @@ namespace Libreria_anav
         {
 
             services.AddControllers();
+            //Configurar DBContext con SQL
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
+
+            //Configurar els ervicio para que pueda ser usado
+            services.AddTransient<BooksService>();
+            //services.AddScoped<BooksService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Libreria_anav", Version = "v1" });
@@ -54,6 +65,7 @@ namespace Libreria_anav
             {
                 endpoints.MapControllers();
             });
+            AppDbInitializer.Seed(app);
         }
     }
 }
