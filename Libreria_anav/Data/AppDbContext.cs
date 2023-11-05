@@ -11,5 +11,6 @@ namespace Libreria_anav.Data
         }
         
         public DbSet<Book> Books { get; set; }
+        public object Book { get; internal set; }
     }
 }
