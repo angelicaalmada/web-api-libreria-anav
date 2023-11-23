@@ -16,9 +16,9 @@ namespace Libreria_anav.Data
             {
                 var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
 
-                if (!context.Books.Any())
+                if (!context.Book.Any())
                 {
-                    context.Books.AddRange(new Book()
+                    context.Book.AddRange(new Book()
                     {
                         Titulo = "1st Book Title",
                         DEscripcion = "1st Book Description",
@@ -26,7 +26,6 @@ namespace Libreria_anav.Data
                         DateRead = DateTime.Now.AddDays(-10),
                         Rate = 4,
                         Genero = "Biography",
-                        Autor = "1st Author",
                         CoverUrl = "https...",
                         DateAdded = DateTime.Now,
 
@@ -38,7 +37,6 @@ namespace Libreria_anav.Data
                         DEscripcion = "2nd Book Description",
                         IsRead = true,
                         Genero = "Biography",
-                        Autor = "1st Author",
                         CoverUrl = "https...",
                         DateAdded = DateTime.Now,
 

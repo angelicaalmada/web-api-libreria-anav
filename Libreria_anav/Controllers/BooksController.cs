@@ -30,14 +30,14 @@ namespace Libreria_anav.Controllers
         [HttpGet("get-book-by-id/{id}")]
         public IActionResult GetBookById(int id)
         {
-            var book = _bookService.GetBooksById(id);
+            var book = _bookService.GetBookById(id);
             return Ok(book);
         }
-        [HttpPost("add-book")]
+        [HttpPost("add-book-with-authors")]
         public IActionResult AddBook([FromBody] BookVM book)
         {
 
-            _bookService.AddBook(book);
+            _bookService.AddBookWithAuthors(book);
             return Ok();
         }
 

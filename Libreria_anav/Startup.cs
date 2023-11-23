@@ -1,5 +1,6 @@
 using Libreria_anav.Data;
 using Libreria_anav.Data.Models.Services;
+using Libreria_anav.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,6 +39,8 @@ namespace Libreria_anav
 
             //Configurar els ervicio para que pueda ser usado
             services.AddTransient<BooksService>();
+            services.AddTransient<AuthorsService>();
+            services.AddTransient<PublishersService>();
             //services.AddScoped<BooksService>();
             services.AddSwaggerGen(c =>
             {
@@ -65,7 +68,7 @@ namespace Libreria_anav
             {
                 endpoints.MapControllers();
             });
-            AppDbInitializer.Seed(app);
+            //AppDbInitializer.Seed(app);
         }
     }
 }

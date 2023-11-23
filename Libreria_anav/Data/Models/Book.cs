@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Libreria_anav.Data.Models
 {
@@ -13,8 +14,12 @@ namespace Libreria_anav.Data.Models
         public DateTime? DateRead { get; set; }
         public int? Rate { get; set; }
         public string Genero { get; set; }
-        public string Autor {  get; set; } 
         public string CoverUrl { get; set; }
         public DateTime DateAdded { get; set; }
+
+        //Propiedades de navegacion (En esta parte es donde "mapeamos")
+        public int PublisherId { get; set; }
+        public Publisher Publisher {  get; set; }
+        public List<Book_Author> Book_Authors { get; set; }
     }
 }
